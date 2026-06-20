@@ -1,0 +1,79 @@
+{
+  "script": "02_gate2_recompute_scores.py",
+  "gate": "Gate 2",
+  "scanpy_version": "1.11.5",
+  "resolved_scanpy_call": "sc.tl.score_genes(adata, gene_list=GENES, ctrl_as_ref=True, ctrl_size=50, gene_pool=None, n_bins=25, score_name=NAME, random_state=42, copy=False, use_raw=False, layer=None)",
+  "gene_pool_hash": "2323b767da3d87a8515fdbac491ce3c2c699a09b458a80ecaef64aa00f2022de",
+  "ctrl_as_ref": true,
+  "aucell_implementation": "custom deterministic chunked (auc_threshold=0.05, seed=42)",
+  "zscore_ddof": 0,
+  "isc_genes": [
+    "LGR5",
+    "OLFM4",
+    "ASCL2",
+    "SOX9",
+    "CD44",
+    "SMOC2",
+    "RGMB",
+    "EPHB2",
+    "MSI1"
+  ],
+  "fao_genes": [
+    "CPT1A",
+    "HMGCS2",
+    "FABP1",
+    "ACOX1",
+    "ACADL",
+    "ACADM",
+    "PDK4",
+    "PPARD",
+    "PPARA",
+    "ANGPTL4",
+    "HADH",
+    "ACAA2"
+  ],
+  "isc_zscore_genes_used": [
+    "LGR5",
+    "OLFM4",
+    "ASCL2",
+    "SOX9",
+    "CD44",
+    "SMOC2",
+    "RGMB",
+    "EPHB2",
+    "MSI1"
+  ],
+  "isc_zscore_genes_skipped": [],
+  "fao_zscore_genes_used": [
+    "CPT1A",
+    "HMGCS2",
+    "FABP1",
+    "ACOX1",
+    "ACADL",
+    "ACADM",
+    "PDK4",
+    "PPARD",
+    "PPARA",
+    "ANGPTL4",
+    "HADH",
+    "ACAA2"
+  ],
+  "fao_zscore_genes_skipped": [],
+  "fixed_bg_isc_n_controls": 442,
+  "fixed_bg_fao_n_controls": 594,
+  "fixed_bg_vs_official_isc_r": 0.98196,
+  "fixed_bg_vs_official_fao_r": 0.994337,
+  "n_epithelial_cells": 168295,
+  "n_ce01_cells": 61953,
+  "inputs": {
+    "epithelial_normalized": "data/processed/pelka_epithelial.h5ad",
+    "config": "core_validation_v2/config.yaml"
+  },
+  "outputs": {
+    "scores_parquet": "core_validation_v2/results/gate2_recomputed_scores_cE01.parquet",
+    "report": "core_validation_v2/results/gate2_score_recomputation_report.md",
+    "pooled_decoupling": "core_validation_v2/results/tables/gate2_pooled_decoupling.csv",
+    "fixed_control_genes": "core_validation_v2/provenance/fixed_control_gene_sets.json"
+  },
+  "status": "COMPLETE"
+}

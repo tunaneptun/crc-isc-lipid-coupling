@@ -1,0 +1,122 @@
+# core_validation_v2/config.yaml
+# Transcribed from CORE_VALIDATION_PROTOCOL.md (tag: protocol_frozen_v1).
+# All values are LOCKED. Any change requires a dated, reasoned amendment
+# in CORE_VALIDATION_PROTOCOL.md BEFORE the affected analysis runs.
+
+protocol_ref: "CORE_VALIDATION_PROTOCOL.md (tag protocol_frozen_v1)"
+
+# Input data paths
+inputs:
+  epithelial_normalized: "data/processed/pelka_epithelial.h5ad"
+  epithelial_counts: "data/processed/pelka_epithelial_counts.h5ad"
+
+# ── Pre-specified population (LOCKED) ────────────────────────────────────
+population:
+  canonical_filter: 'cl295v11SubShort == "cE01"'
+  verify_against_label: "Stem/TA-like"
+  prolif_label_excluded: "Stem/TA-like_prolif"
+  tumor_code: "T"
+  normal_code: "N"
+  tissue_column: "SPECIMEN_TYPE"
+  subtype_column_short: "cl295v11SubShort"
+  subtype_column_derived: "epithelial_subtype"
+  patient_column: "PID"  # Verified by Gate 1: 62 unique patients, 0 missing, 0 duplicates
+  batch_column: "batchID"  # Verified by Gate 1; independently confirmed by Gate 1 red-team
+  mmr_column: null  # UNRESOLVED: conflicting metadata between MMRStatus and mmr_status
+  mmr_column_status: "unresolved_due_to_conflicting_metadata"  # MMRStatus consistent within PID; mmr_status varies within 36 PIDs
+
+# ── Gene sets (LOCKED) ──────────────────────────────────────────────────
+gene_sets:
+  isc_9:
+    - LGR5
+    - OLFM4
+    - ASCL2
+    - SOX9
+    - CD44
+    - SMOC2
+    - RGMB
+    - EPHB2
+    - MSI1
+
+  ppar_fao_12:
+    - CPT1A
+    - HMGCS2
+    - FABP1
+    - ACOX1
+    - ACADL
+    - ACADM
+    - PDK4
+    - PPARD
+    - PPARA
+    - ANGPTL4
+    - HADH
+    - ACAA2
+
+  core_beta_oxidation_5:
+    - CPT1A
+    - ACADL
+    - ACADM
+    - HADH
+    - ACAA2
+
+  decomposition_variants:
+    fabp1_removed:
+      base: ppar_fao_12
+      remove: [FABP1]
+    hmgcs2_removed:
+      base: ppar_fao_12
+      remove: [HMGCS2]
+    angptl4_removed:
+      base: ppar_fao_12
+      remove: [ANGPTL4]
+    leave_one_out:
+      applies_to: [isc_9, ppar_fao_12]
+
+# ── QC columns (verified by Gate 1, confirmed by Gate 1 red-team) ──
+qc_columns:
+  total_counts: "total_counts"
+  n_genes_by_counts: "n_genes_by_counts"
+  pct_counts_mt: "pct_counts_mt"
+  s_score: null       # not present in obs
+  g2m_score: null      # not present in obs
+
+# ── Eligibility thresholds (LOCKED) ─────────────────────────────────────
+eligibility:
+  primary_min_cells: 30          # both tissues required
+  sensitivity_thresholds: [20, 50]
+  lgr5_subset_min_cells: 15      # both tissues required
+  power_contingency_floor: 15    # if <15 eligible at 30, elevate 20 to co-primary
+
+# ── Scoring parameters (LOCKED) ─────────────────────────────────────────
+scanpy_scoring:
+  use_raw: false
+  ctrl_size: 50
+  n_bins: 25
+  random_state: 42
+
+# ── Gate 4 pass criteria (LOCKED) ───────────────────────────────────────
+gate4_pass:
+  bootstrap_ci_level: 0.95       # must exclude 0
+  wilcoxon_alpha: 0.05
+  loo_direction_must_be_stable: true
+  loo_max_abs_effect_change_fraction: 0.25
+
+# ── Gate 5 pass criteria (LOCKED) ───────────────────────────────────────
+gate5:
+  cells_per_patient_per_tissue: 30
+  n_seeds: 1000
+  pass_min_direction_fraction: 0.90
+  pass_min_median_magnitude_fraction: 0.50
+
+# ── Gate 3 material weakening definition (LOCKED) ───────────────────────
+gate3_material_weakening:
+  # "Material weakening" = either condition:
+  #   1. Effect direction is lost, OR
+  #   2. Donor-aware mean Fisher-z effect < 50% of the full-score effect
+  direction_lost: true
+  donor_aware_mean_fisher_z_effect_min_fraction: 0.50
+
+# ── Execution order (LOCKED) ────────────────────────────────────────────
+execution_order: [1, 2, 4, 3, 5, 6, 7]
+# Gate 1 -> Gate 2 -> Gate 4 (decision) -> Gate 3 (decomposition)
+# -> Gate 5 (downsampling) -> Gate 6 (LGR5) -> Gate 7 (context)

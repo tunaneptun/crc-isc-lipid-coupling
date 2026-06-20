@@ -1,0 +1,19 @@
+{
+  "script": "01_gate1_input_validation.py",
+  "gate": "Gate 1",
+  "inputs": {
+    "epithelial_normalized": {
+      "path": "data/processed/pelka_epithelial.h5ad"
+    },
+    "epithelial_counts": {
+      "path": "data/processed/pelka_epithelial_counts.h5ad"
+    },
+    "config": {
+      "path": "core_validation_v2/config.yaml"
+    }
+  },
+  "outputs": {
+    "results": "core_validation_v2/results/gate1_input_validation.json"
+  },
+  "status": "PASS"
+}

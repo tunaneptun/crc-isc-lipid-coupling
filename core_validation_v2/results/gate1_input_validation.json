@@ -1,0 +1,690 @@
+{
+  "gate": "Gate 1",
+  "status": "PASS",
+  "checks": {
+    "patient_column": "PID",
+    "n_patients": 62,
+    "n_missing_pid": 0,
+    "duplicate_barcodes": 0,
+    "tissue_column_used": "SPECIMEN_TYPE",
+    "patients_with_both_tissues": 36,
+    "patients_tumor_only": 26,
+    "patients_normal_only": 0,
+    "mmr_column": "MMRStatus",
+    "mmr_inconsistent_patients": [],
+    "ce01_count": 61953,
+    "stem_ta_count": 61953,
+    "ce01_stem_exact_match": true,
+    "ce01_not_stem": 0,
+    "stem_not_ce01": 0,
+    "norm_X": {
+      "label": ".X (normalized file)",
+      "shape": [
+        168295,
+        31873
+      ],
+      "sparse": true,
+      "dtype": "float64",
+      "min_nz": 0.10572286984907246,
+      "max": 5.6988391470437465,
+      "mean_nz": 0.8149077217692919,
+      "median_nz": 0.5677363838185516,
+      "frac_integer": 0.0,
+      "verdict": "LOG_NORMALIZED"
+    },
+    "norm_raw_X": {
+      "label": ".raw.X (normalized file)",
+      "shape": [
+        168295,
+        31873
+      ],
+      "sparse": true,
+      "dtype": "float64",
+      "min_nz": 0.10572286984907246,
+      "max": 5.6988391470437465,
+      "mean_nz": 0.8149077217692919,
+      "median_nz": 0.5677363838185516,
+      "frac_integer": 0.0,
+      "verdict": "LOG_NORMALIZED"
+    },
+    "counts_X": {
+      "label": ".X (counts file)",
+      "shape": [
+        168295,
+        31873
+      ],
+      "sparse": true,
+      "dtype": "float32",
+      "min_nz": 1.0,
+      "max": 487.0,
+      "mean_nz": 4.367547657021341,
+      "median_nz": 1.0,
+      "frac_integer": 1.0,
+      "verdict": "RAW_COUNTS"
+    },
+    "barcode_alignment": {
+      "norm": 168295,
+      "counts": 168295,
+      "common": 168295,
+      "norm_only": 0,
+      "counts_only": 0
+    },
+    "gene_duplicates_norm": 0,
+    "gene_duplicates_counts": 540,
+    "target_genes_present": 21,
+    "target_genes_missing": [],
+    "target_genes_in_duplicates": [],
+    "dimensions": {
+      "norm_cells": 168295,
+      "norm_genes": 31873,
+      "counts_cells": 168295,
+      "counts_genes": 31873
+    },
+    "eligibility": {
+      "thresh_20": {
+        "threshold": 20,
+        "n_eligible": 35,
+        "patients": [
+          {
+            "patient": "C106",
+            "n_tumor": 397,
+            "n_normal": 186
+          },
+          {
+            "patient": "C107",
+            "n_tumor": 778,
+            "n_normal": 394
+          },
+          {
+            "patient": "C109",
+            "n_tumor": 1041,
+            "n_normal": 336
+          },
+          {
+            "patient": "C110",
+            "n_tumor": 147,
+            "n_normal": 202
+          },
+          {
+            "patient": "C111",
+            "n_tumor": 413,
+            "n_normal": 115
+          },
+          {
+            "patient": "C112",
+            "n_tumor": 1348,
+            "n_normal": 183
+          },
+          {
+            "patient": "C113",
+            "n_tumor": 1535,
+            "n_normal": 86
+          },
+          {
+            "patient": "C114",
+            "n_tumor": 348,
+            "n_normal": 90
+          },
+          {
+            "patient": "C115",
+            "n_tumor": 185,
+            "n_normal": 81
+          },
+          {
+            "patient": "C116",
+            "n_tumor": 349,
+            "n_normal": 229
+          },
+          {
+            "patient": "C122",
+            "n_tumor": 1109,
+            "n_normal": 527
+          },
+          {
+            "patient": "C123",
+            "n_tumor": 1507,
+            "n_normal": 793
+          },
+          {
+            "patient": "C124",
+            "n_tumor": 292,
+            "n_normal": 916
+          },
+          {
+            "patient": "C125",
+            "n_tumor": 1163,
+            "n_normal": 1193
+          },
+          {
+            "patient": "C126",
+            "n_tumor": 542,
+            "n_normal": 1350
+          },
+          {
+            "patient": "C129",
+            "n_tumor": 1202,
+            "n_normal": 210
+          },
+          {
+            "patient": "C130",
+            "n_tumor": 567,
+            "n_normal": 601
+          },
+          {
+            "patient": "C132",
+            "n_tumor": 792,
+            "n_normal": 470
+          },
+          {
+            "patient": "C133",
+            "n_tumor": 134,
+            "n_normal": 43
+          },
+          {
+            "patient": "C134",
+            "n_tumor": 1108,
+            "n_normal": 380
+          },
+          {
+            "patient": "C135",
+            "n_tumor": 815,
+            "n_normal": 179
+          },
+          {
+            "patient": "C136",
+            "n_tumor": 982,
+            "n_normal": 412
+          },
+          {
+            "patient": "C137",
+            "n_tumor": 434,
+            "n_normal": 307
+          },
+          {
+            "patient": "C138",
+            "n_tumor": 242,
+            "n_normal": 57
+          },
+          {
+            "patient": "C139",
+            "n_tumor": 1334,
+            "n_normal": 492
+          },
+          {
+            "patient": "C140",
+            "n_tumor": 1427,
+            "n_normal": 253
+          },
+          {
+            "patient": "C142",
+            "n_tumor": 340,
+            "n_normal": 370
+          },
+          {
+            "patient": "C143",
+            "n_tumor": 499,
+            "n_normal": 433
+          },
+          {
+            "patient": "C151",
+            "n_tumor": 150,
+            "n_normal": 301
+          },
+          {
+            "patient": "C152",
+            "n_tumor": 394,
+            "n_normal": 169
+          },
+          {
+            "patient": "C155",
+            "n_tumor": 584,
+            "n_normal": 188
+          },
+          {
+            "patient": "C157",
+            "n_tumor": 1225,
+            "n_normal": 103
+          },
+          {
+            "patient": "C162",
+            "n_tumor": 4296,
+            "n_normal": 52
+          },
+          {
+            "patient": "C165",
+            "n_tumor": 28,
+            "n_normal": 28
+          },
+          {
+            "patient": "C170",
+            "n_tumor": 1807,
+            "n_normal": 57
+          }
+        ]
+      },
+      "thresh_30": {
+        "threshold": 30,
+        "n_eligible": 34,
+        "patients": [
+          {
+            "patient": "C106",
+            "n_tumor": 397,
+            "n_normal": 186
+          },
+          {
+            "patient": "C107",
+            "n_tumor": 778,
+            "n_normal": 394
+          },
+          {
+            "patient": "C109",
+            "n_tumor": 1041,
+            "n_normal": 336
+          },
+          {
+            "patient": "C110",
+            "n_tumor": 147,
+            "n_normal": 202
+          },
+          {
+            "patient": "C111",
+            "n_tumor": 413,
+            "n_normal": 115
+          },
+          {
+            "patient": "C112",
+            "n_tumor": 1348,
+            "n_normal": 183
+          },
+          {
+            "patient": "C113",
+            "n_tumor": 1535,
+            "n_normal": 86
+          },
+          {
+            "patient": "C114",
+            "n_tumor": 348,
+            "n_normal": 90
+          },
+          {
+            "patient": "C115",
+            "n_tumor": 185,
+            "n_normal": 81
+          },
+          {
+            "patient": "C116",
+            "n_tumor": 349,
+            "n_normal": 229
+          },
+          {
+            "patient": "C122",
+            "n_tumor": 1109,
+            "n_normal": 527
+          },
+          {
+            "patient": "C123",
+            "n_tumor": 1507,
+            "n_normal": 793
+          },
+          {
+            "patient": "C124",
+            "n_tumor": 292,
+            "n_normal": 916
+          },
+          {
+            "patient": "C125",
+            "n_tumor": 1163,
+            "n_normal": 1193
+          },
+          {
+            "patient": "C126",
+            "n_tumor": 542,
+            "n_normal": 1350
+          },
+          {
+            "patient": "C129",
+            "n_tumor": 1202,
+            "n_normal": 210
+          },
+          {
+            "patient": "C130",
+            "n_tumor": 567,
+            "n_normal": 601
+          },
+          {
+            "patient": "C132",
+            "n_tumor": 792,
+            "n_normal": 470
+          },
+          {
+            "patient": "C133",
+            "n_tumor": 134,
+            "n_normal": 43
+          },
+          {
+            "patient": "C134",
+            "n_tumor": 1108,
+            "n_normal": 380
+          },
+          {
+            "patient": "C135",
+            "n_tumor": 815,
+            "n_normal": 179
+          },
+          {
+            "patient": "C136",
+            "n_tumor": 982,
+            "n_normal": 412
+          },
+          {
+            "patient": "C137",
+            "n_tumor": 434,
+            "n_normal": 307
+          },
+          {
+            "patient": "C138",
+            "n_tumor": 242,
+            "n_normal": 57
+          },
+          {
+            "patient": "C139",
+            "n_tumor": 1334,
+            "n_normal": 492
+          },
+          {
+            "patient": "C140",
+            "n_tumor": 1427,
+            "n_normal": 253
+          },
+          {
+            "patient": "C142",
+            "n_tumor": 340,
+            "n_normal": 370
+          },
+          {
+            "patient": "C143",
+            "n_tumor": 499,
+            "n_normal": 433
+          },
+          {
+            "patient": "C151",
+            "n_tumor": 150,
+            "n_normal": 301
+          },
+          {
+            "patient": "C152",
+            "n_tumor": 394,
+            "n_normal": 169
+          },
+          {
+            "patient": "C155",
+            "n_tumor": 584,
+            "n_normal": 188
+          },
+          {
+            "patient": "C157",
+            "n_tumor": 1225,
+            "n_normal": 103
+          },
+          {
+            "patient": "C162",
+            "n_tumor": 4296,
+            "n_normal": 52
+          },
+          {
+            "patient": "C170",
+            "n_tumor": 1807,
+            "n_normal": 57
+          }
+        ]
+      },
+      "thresh_50": {
+        "threshold": 50,
+        "n_eligible": 33,
+        "patients": [
+          {
+            "patient": "C106",
+            "n_tumor": 397,
+            "n_normal": 186
+          },
+          {
+            "patient": "C107",
+            "n_tumor": 778,
+            "n_normal": 394
+          },
+          {
+            "patient": "C109",
+            "n_tumor": 1041,
+            "n_normal": 336
+          },
+          {
+            "patient": "C110",
+            "n_tumor": 147,
+            "n_normal": 202
+          },
+          {
+            "patient": "C111",
+            "n_tumor": 413,
+            "n_normal": 115
+          },
+          {
+            "patient": "C112",
+            "n_tumor": 1348,
+            "n_normal": 183
+          },
+          {
+            "patient": "C113",
+            "n_tumor": 1535,
+            "n_normal": 86
+          },
+          {
+            "patient": "C114",
+            "n_tumor": 348,
+            "n_normal": 90
+          },
+          {
+            "patient": "C115",
+            "n_tumor": 185,
+            "n_normal": 81
+          },
+          {
+            "patient": "C116",
+            "n_tumor": 349,
+            "n_normal": 229
+          },
+          {
+            "patient": "C122",
+            "n_tumor": 1109,
+            "n_normal": 527
+          },
+          {
+            "patient": "C123",
+            "n_tumor": 1507,
+            "n_normal": 793
+          },
+          {
+            "patient": "C124",
+            "n_tumor": 292,
+            "n_normal": 916
+          },
+          {
+            "patient": "C125",
+            "n_tumor": 1163,
+            "n_normal": 1193
+          },
+          {
+            "patient": "C126",
+            "n_tumor": 542,
+            "n_normal": 1350
+          },
+          {
+            "patient": "C129",
+            "n_tumor": 1202,
+            "n_normal": 210
+          },
+          {
+            "patient": "C130",
+            "n_tumor": 567,
+            "n_normal": 601
+          },
+          {
+            "patient": "C132",
+            "n_tumor": 792,
+            "n_normal": 470
+          },
+          {
+            "patient": "C134",
+            "n_tumor": 1108,
+            "n_normal": 380
+          },
+          {
+            "patient": "C135",
+            "n_tumor": 815,
+            "n_normal": 179
+          },
+          {
+            "patient": "C136",
+            "n_tumor": 982,
+            "n_normal": 412
+          },
+          {
+            "patient": "C137",
+            "n_tumor": 434,
+            "n_normal": 307
+          },
+          {
+            "patient": "C138",
+            "n_tumor": 242,
+            "n_normal": 57
+          },
+          {
+            "patient": "C139",
+            "n_tumor": 1334,
+            "n_normal": 492
+          },
+          {
+            "patient": "C140",
+            "n_tumor": 1427,
+            "n_normal": 253
+          },
+          {
+            "patient": "C142",
+            "n_tumor": 340,
+            "n_normal": 370
+          },
+          {
+            "patient": "C143",
+            "n_tumor": 499,
+            "n_normal": 433
+          },
+          {
+            "patient": "C151",
+            "n_tumor": 150,
+            "n_normal": 301
+          },
+          {
+            "patient": "C152",
+            "n_tumor": 394,
+            "n_normal": 169
+          },
+          {
+            "patient": "C155",
+            "n_tumor": 584,
+            "n_normal": 188
+          },
+          {
+            "patient": "C157",
+            "n_tumor": 1225,
+            "n_normal": 103
+          },
+          {
+            "patient": "C162",
+            "n_tumor": 4296,
+            "n_normal": 52
+          },
+          {
+            "patient": "C170",
+            "n_tumor": 1807,
+            "n_normal": 57
+          }
+        ]
+      }
+    },
+    "power_status": "ADEQUATE",
+    "effective_threshold": 30,
+    "batch_column": "batchID",
+    "batch_tissue_confound": {
+      "n_batches": 180,
+      "n_paired_patients": 35,
+      "n_same_batch": 0,
+      "n_diff_batch": 35,
+      "confound_level": "STRONG"
+    },
+    "qc_columns": {
+      "total_counts": "total_counts",
+      "n_genes": "n_genes_by_counts",
+      "pct_mt": "pct_counts_mt",
+      "S_score": null,
+      "G2M_score": null
+    },
+    "obs_columns": [
+      "SPECIMEN_TYPE",
+      "SOURCE_HOSPITAL",
+      "TISSUE_PROCESSING_TEAM",
+      "PROCESSING_TYPE",
+      "SINGLECELL_TYPE",
+      "PatientTypeID",
+      "HistologicTypeSimple",
+      "MMR_IHC",
+      "MMRStatus",
+      "MLH1Status",
+      "MMRMLH1Tumor",
+      "TissueSite_detailed",
+      "TissueSiteSimple",
+      "HistologicGrade_detailed",
+      "HistologicGradeSimple",
+      "TumorStage",
+      "NodeStatus_detailed",
+      "NodeStatusSimple",
+      "MetastasisStatus",
+      "TumorSize",
+      "SizeQuantile",
+      "PID",
+      "Sex",
+      "Age",
+      "Ethnicity",
+      "Race",
+      "batchID",
+      "clTopLevel",
+      "clMidwayPr",
+      "cl295v11SubShort",
+      "cl295v11SubFull",
+      "n_genes_by_counts",
+      "total_counts",
+      "total_counts_mt",
+      "pct_counts_mt",
+      "total_counts_ribo",
+      "pct_counts_ribo",
+      "epithelial_subtype",
+      "is_stem_TA",
+      "tissue_type",
+      "mmr_status",
+      "stemness_scanpy",
+      "stemness_aucell",
+      "stemness_zscore",
+      "fao_scanpy",
+      "fao_aucell",
+      "fao_zscore",
+      "stemness_score",
+      "fao_score",
+      "joint_score",
+      "hallmark_fao_score",
+      "kegg_fao_score",
+      "hallmark_wnt_score",
+      "hallmark_oxphos_score",
+      "split"
+    ]
+  },
+  "kill": false,
+  "kill_reason": null
+}

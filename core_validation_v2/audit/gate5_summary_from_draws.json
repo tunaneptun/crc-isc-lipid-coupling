@@ -1,0 +1,6 @@
+{
+  "n_iterations": 1000,
+  "direction_retention_fraction": 1.0,
+  "median_downsampled_magnitude": 0.4141995,
+  "min_contributing_patients": 34
+}

@@ -1,0 +1,2 @@
+mean_r_normal,mean_r_tumor,median_r_normal,median_r_tumor,mean_z_normal,mean_z_tumor,mean_delta_z,median_delta_z,tanh_mean_z_normal,tanh_mean_z_tumor,tanh_diff,prop_delta_z_positive,wilcoxon_p,bootstrap_ci_lo,bootstrap_ci_hi,n_patients
+-0.436952,-0.072628,-0.434499,-0.086323,-0.474359,-0.07373,0.400629,0.422797,-0.441715,-0.073597,0.368118,0.9706,2.3283064365386963e-10,0.3371415699522461,0.46414002142135113,34

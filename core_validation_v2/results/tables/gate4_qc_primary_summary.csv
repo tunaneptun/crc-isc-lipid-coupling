@@ -1,0 +1,2 @@
+n_strata_total,n_strata_informative,n_strata_rank_deficient,n_strata_low_df,n_paired_patients_retained,mean_delta_z,median_delta_z,wilcoxon_p,bootstrap_ci_low,bootstrap_ci_high,qc_sensitivity_status
+68,68,0,0,34,0.396429,0.404918,0.0,0.333568,0.459614,COMPUTED

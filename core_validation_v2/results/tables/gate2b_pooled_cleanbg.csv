@@ -1,0 +1,3 @@
+method,r_normal,r_tumor,r_diff,n_tumor,n_normal
+standard_scanpy,-0.380809,-0.018209,0.3626,50167,11786
+clean_bg_scanpy,-0.382179,-0.032731,0.349448,50167,11786

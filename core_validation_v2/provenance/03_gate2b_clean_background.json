@@ -1,0 +1,26 @@
+{
+  "script": "03_gate2b_clean_background.py",
+  "gate": "Gate 2b",
+  "scanpy_version": "1.11.5",
+  "n_cells": 168295,
+  "n_ce01": 61953,
+  "official_recovery_status": "verified",
+  "clean_recovery_status": "verified",
+  "cross_contamination_fao_in_isc": [],
+  "cross_contamination_isc_in_fao": [],
+  "clean_pool_size": "ISC:31861, FAO:31864",
+  "verdict": "DIRECTION PRESERVED",
+  "inputs": {
+    "epithelial_normalized": "data/processed/pelka_epithelial.h5ad",
+    "config": "core_validation_v2/config.yaml",
+    "gate2_scores": "core_validation_v2/results/gate2_recomputed_scores_cE01.parquet"
+  },
+  "outputs": {
+    "report": "core_validation_v2/results/gate2b_clean_background_report.md",
+    "contamination_csv": "core_validation_v2/results/tables/gate2b_contamination.csv",
+    "pooled_csv": "core_validation_v2/results/tables/gate2b_pooled_cleanbg.csv",
+    "scores_parquet": "core_validation_v2/results/gate2b_clean_background_scores_cE01.parquet",
+    "clean_controls": "core_validation_v2/provenance/clean_control_gene_sets.json"
+  },
+  "status": "COMPLETE"
+}

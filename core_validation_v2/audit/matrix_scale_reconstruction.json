@@ -1,0 +1,146 @@
+[
+  {
+    "matrix": "Pelka normalized .X",
+    "shape": [
+      168295,
+      31873
+    ],
+    "dtype": "float64",
+    "sparse": true,
+    "sample_n_nonzero": 174183,
+    "sample_min_nonzero": 0.03630360371312874,
+    "sample_median_nonzero": 0.5166800623295251,
+    "sample_max": 7.274125235745041,
+    "sample_frac_integer_nonzero": 0.0,
+    "cell_sum_min_median_max": [
+      656.6637505251599,
+      2438.991489517849,
+      4042.7124401116953
+    ],
+    "expm1_cell_sum_min_median_max": [
+      9999.999999999995,
+      10000.0,
+      10000.000000000004
+    ]
+  },
+  {
+    "matrix": "Pelka normalized .raw.X",
+    "shape": [
+      168295,
+      31873
+    ],
+    "dtype": "float64",
+    "sparse": true,
+    "sample_n_nonzero": 174183,
+    "sample_min_nonzero": 0.03630360371312874,
+    "sample_median_nonzero": 0.5166800623295251,
+    "sample_max": 7.274125235745041,
+    "sample_frac_integer_nonzero": 0.0,
+    "cell_sum_min_median_max": [
+      656.6637505251599,
+      2438.991489517849,
+      4042.7124401116953
+    ],
+    "expm1_cell_sum_min_median_max": [
+      9999.999999999995,
+      10000.0,
+      10000.000000000004
+    ]
+  },
+  {
+    "matrix": "Pelka counts .X",
+    "shape": [
+      168295,
+      31873
+    ],
+    "dtype": "float32",
+    "sparse": true,
+    "sample_n_nonzero": 174183,
+    "sample_min_nonzero": 1.0,
+    "sample_median_nonzero": 1.0,
+    "sample_max": 12863.0,
+    "sample_frac_integer_nonzero": 1.0,
+    "cell_sum_min_median_max": [
+      506.0,
+      11543.5,
+      270485.0
+    ],
+    "expm1_cell_sum_min_median_max": [
+      13590.376953125,
+      Infinity,
+      Infinity
+    ]
+  },
+  {
+    "matrix": "Lee SMC local matrix",
+    "shape": [
+      33694,
+      500
+    ],
+    "min20_nonzero": [
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357,
+      0.172061701618357
+    ],
+    "max": 8.14886965202066,
+    "fractional_nonzero": true,
+    "sample_expm1_colsum_min_median_max": [
+      9999.999999999975,
+      10000.0,
+      10000.000000000022
+    ]
+  },
+  {
+    "matrix": "Lee KUL3 local matrix",
+    "shape": [
+      33694,
+      500
+    ],
+    "min20_nonzero": [
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711,
+      0.1921711
+    ],
+    "max": 8.120903,
+    "fractional_nonzero": true,
+    "sample_expm1_colsum_min_median_max": [
+      9999.997106320703,
+      9999.999999191166,
+      10000.002342327152
+    ]
+  }
+]

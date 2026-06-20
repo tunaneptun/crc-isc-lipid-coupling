@@ -1,0 +1,5 @@
+method,n_retained,n_excluded,mean_delta_z,median_delta_z,wilcoxon_p,bootstrap_ci_lo,bootstrap_ci_hi,ci_excludes_0,proportion_delta_z_positive,loo_all_same_sign,loo_max_rel_change_pct
+scanpy,34,0,0.400629,0.422797,0.0,0.337142,0.46414,True,0.9706,True,3.61
+clean_bg,34,0,0.386688,0.393259,0.0,0.321472,0.450786,True,0.9706,True,3.72
+aucell,34,0,0.151983,0.150491,3e-06,0.09984,0.202556,True,0.8529,True,8.11
+zscore,34,0,0.206823,0.220008,0.0,0.15404,0.258007,True,0.9118,True,6.27

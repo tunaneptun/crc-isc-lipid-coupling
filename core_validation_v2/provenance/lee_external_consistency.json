@@ -1,0 +1,57 @@
+{
+  "script": "08_lee_external_consistency.py",
+  "protocol": "protocol_frozen_v10 (A009)",
+  "versions": {
+    "scanpy": "1.11.5",
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1"
+  },
+  "random_state": 42,
+  "inputs": {
+    "smc_ann": "data/external/lee/GSE132465_annotation.txt.gz",
+    "smc_mat": "data/external/lee/GSE132465_matrix.txt.gz",
+    "kul3_ann": "data/external/lee/GSE144735_annotation.txt.gz",
+    "kul3_mat": "data/external/lee/GSE144735_matrix.txt.gz",
+    "pelka_h5ad": "data/processed/pelka_epithelial.h5ad",
+    "gate2b_parquet": "core_validation_v2/results/gate2b_clean_background_scores_cE01.parquet",
+    "clean_controls": "core_validation_v2/provenance/clean_control_gene_sets.json"
+  },
+  "input_hashes": {
+    "smc_ann": "4bf2ebdadc88da53b0c46e654a6576e841925addc25c981d7cdbc0d988b4677c",
+    "smc_mat": "96418047aa62272792668d5ee7bb95d5585f2b4d2d2b35899fcfba51403f90f0",
+    "kul3_ann": "4eb9da239bef95b9003c0f6d0eeb41c6598ecc794cd25f57ad06d9bad81e881b",
+    "kul3_mat": "390c1982bc517512e53bee9ea1323eae85ad40c29623fc2f9afc48cafe35214a",
+    "clean_controls": "7c9a31066fa83b366f79edbdd910ff4bf9871028df454f9f4f11a1a9d7a34329"
+  },
+  "anchor_counts": {
+    "SMC": 406,
+    "KUL3": 495,
+    "Pelka_normal_cE01": 11786
+  },
+  "lee_controls": {
+    "SMC": {
+      "isc_n": 250,
+      "fao_n": 300,
+      "isc_hash": "29dd887a1e96792ef89ab77e52cef582625f9f3361060372d046b7ff0b902ed8",
+      "fao_hash": "7e14810bf80555c900488a133e0aca61c57791c647242ca8d2d5ca9f013f158a"
+    },
+    "KUL3": {
+      "isc_n": 350,
+      "fao_n": 300,
+      "isc_hash": "732ba9d3d77a1afa98542c99ccf654a243d36c16fcc81871538cccd2785ed1e0",
+      "fao_hash": "d5ed196e202e0f6169b23bc896a1e0d30ba61ce09b845bd061419696b0db9e2b"
+    }
+  },
+  "pelka_controls": {
+    "isc_n": 300,
+    "fao_n": 400
+  },
+  "reproduction_guards": {
+    "guard_6a_r_normal": -0.382179,
+    "guard_6b_isc_max_diff": 1.1657341758564144e-15,
+    "guard_6b_fao_max_diff": 1.1657341758564144e-15
+  },
+  "primary_all_negative": true,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,4 @@
+method,n_tumor,n_normal,r_tumor,r_normal,r_diff
+scanpy (recomputed),50167,11786,-0.018209,-0.380809,0.3626
+AUCell (recomputed),50167,11786,-0.003233,-0.139822,0.136589
+z-score (recomputed),50167,11786,0.156248,-0.018217,0.174465

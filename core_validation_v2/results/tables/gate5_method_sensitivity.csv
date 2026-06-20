@@ -1,0 +1,5 @@
+method,direction_retention_fraction,median_downsampled_magnitude,consolidated_mean_delta_z,direction
+scanpy,1.0,0.414199,0.412717,+
+cleanbg,1.0,0.3964,0.397269,+
+aucell,1.0,0.156038,0.156384,+
+zscore,1.0,0.218154,0.216726,+

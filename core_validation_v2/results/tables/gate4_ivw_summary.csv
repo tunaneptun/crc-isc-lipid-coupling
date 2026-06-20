@@ -1,0 +1,2 @@
+method,ivw_mean_delta_z,bootstrap_ci_low,bootstrap_ci_high,n_patients,seed,note
+scanpy,0.386054,0.312504,0.460438,34,42,weights_approximate_cells_not_independent

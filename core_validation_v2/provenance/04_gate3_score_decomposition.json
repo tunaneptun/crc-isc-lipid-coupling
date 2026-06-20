@@ -1,0 +1,86 @@
+{
+  "script": "04_gate3_score_decomposition.py",
+  "gate": "Gate 3",
+  "versions": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "scanpy": "1.11.5"
+  },
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "n_eligible": 34,
+  "eligible_pids": [
+    "C106",
+    "C107",
+    "C109",
+    "C110",
+    "C111",
+    "C112",
+    "C113",
+    "C114",
+    "C115",
+    "C116",
+    "C122",
+    "C123",
+    "C124",
+    "C125",
+    "C126",
+    "C129",
+    "C130",
+    "C132",
+    "C133",
+    "C134",
+    "C135",
+    "C136",
+    "C137",
+    "C138",
+    "C139",
+    "C140",
+    "C142",
+    "C143",
+    "C151",
+    "C152",
+    "C155",
+    "C157",
+    "C162",
+    "C170"
+  ],
+  "n_ce01": 61953,
+  "n_variants": 23,
+  "copied_helpers": {
+    "donor_aware_from": "04_gate4_donor_aware.py",
+    "donor_aware_source_hash": "45b9d948b9cbb61068583e0963ca0b1c312db01664bedc4033c4466a0cebb95d",
+    "fixed_bg_score_from": "02_gate2_recompute_scores.py",
+    "fixed_bg_score_source_hash": "1f55b4ba6c514338f807a41a84eb0f95398865f5068a6314806fd539b080d8d4"
+  },
+  "guard_results": {
+    "guard1_counts_hashes": "PASS",
+    "guard2_union_target_exclusion": "PASS",
+    "guard3_eligibility_drift": "PASS",
+    "guard4_baseline_reproduction": "PASS",
+    "guard4_isc_max_diff": 1.1657341758564144e-15,
+    "guard4_fao_max_diff": 1.1657341758564144e-15
+  },
+  "baseline_mean_delta_z": 0.3866881092664827,
+  "fao_reframe_needed": false,
+  "isc_single_gene_driven": false,
+  "fao_single_gene_driven": true,
+  "isc_problem_genes": [],
+  "fao_problem_genes": [
+    "FABP1"
+  ],
+  "interpretation": "SINGLE-GENE-DRIVEN: FAO program-level not robust (driven by: FABP1)",
+  "inputs": {
+    "epithelial_normalized": "data/processed/pelka_epithelial.h5ad",
+    "gate2b_scores": "core_validation_v2/results/gate2b_clean_background_scores_cE01.parquet",
+    "clean_control_genes": "core_validation_v2/provenance/clean_control_gene_sets.json",
+    "gate4_provenance": "core_validation_v2/provenance/04_gate4_donor_aware.json",
+    "config": "core_validation_v2/config.yaml"
+  },
+  "input_hashes": {
+    "clean_control_gene_sets_json": "7c9a31066fa83b366f79edbdd910ff4bf9871028df454f9f4f11a1a9d7a34329",
+    "config_yaml": "d17b724b6065cfca88c6777b6d4cde3a7f1ab547005f867090fe29ff56f61644"
+  },
+  "status": "COMPLETE"
+}

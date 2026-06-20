@@ -1,0 +1,96 @@
+{
+  "gate2_pooled": [
+    {
+      "method": "scanpy (recomputed)",
+      "n_tumor": 50167,
+      "n_normal": 11786,
+      "r_tumor": -0.018209,
+      "r_normal": -0.380809,
+      "r_diff": 0.3626
+    },
+    {
+      "method": "AUCell (recomputed)",
+      "n_tumor": 50167,
+      "n_normal": 11786,
+      "r_tumor": -0.003233,
+      "r_normal": -0.139822,
+      "r_diff": 0.136589
+    },
+    {
+      "method": "z-score (recomputed)",
+      "n_tumor": 50167,
+      "n_normal": 11786,
+      "r_tumor": 0.156248,
+      "r_normal": -0.018217,
+      "r_diff": 0.174465
+    },
+    {
+      "method": "scanpy",
+      "n_tumor": 50167,
+      "n_normal": 11786,
+      "r_tumor": -0.018209,
+      "r_normal": -0.380809,
+      "r_diff": 0.3626
+    }
+  ],
+  "gate2b_pooled": [
+    {
+      "method": "standard_scanpy",
+      "r_normal": -0.380809,
+      "r_tumor": -0.018209,
+      "r_diff": 0.3626,
+      "n_tumor": 50167,
+      "n_normal": 11786
+    },
+    {
+      "method": "clean_bg_scanpy",
+      "r_normal": -0.382179,
+      "r_tumor": -0.032731,
+      "r_diff": 0.349448,
+      "n_tumor": 50167,
+      "n_normal": 11786
+    }
+  ],
+  "gate4_primary_summary": [
+    {
+      "mean_r_normal": -0.436952,
+      "mean_r_tumor": -0.072628,
+      "median_r_normal": -0.434499,
+      "median_r_tumor": -0.086323,
+      "mean_z_normal": -0.474359,
+      "mean_z_tumor": -0.07373,
+      "mean_delta_z": 0.400629,
+      "median_delta_z": 0.422797,
+      "tanh_mean_z_normal": -0.441715,
+      "tanh_mean_z_tumor": -0.073597,
+      "tanh_diff": 0.368118,
+      "prop_delta_z_positive": 0.9706,
+      "wilcoxon_p": 2.3283064365386963e-10,
+      "bootstrap_ci_lo": 0.3371415699522461,
+      "bootstrap_ci_hi": 0.4641400214213511,
+      "n_patients": 34
+    }
+  ],
+  "gate5_primary_summary": [
+    {
+      "K": 1000,
+      "sample_size_per_PID_tissue": 30,
+      "seed_plan": "SeedSequence(42).spawn(1000)",
+      "full_data_effect": 0.400629,
+      "magnitude_threshold": 0.2003145,
+      "direction_retention_fraction": 1.0,
+      "median_downsampled_magnitude": 0.414199,
+      "magnitude_pass": true,
+      "direction_pass": true,
+      "outcome_class": "PASS",
+      "consolidated_mean_delta_z": 0.412717,
+      "consolidated_wilcoxon_p": 0.0,
+      "consolidated_bootstrap_ci_low": 0.347078,
+      "consolidated_bootstrap_ci_high": 0.478289,
+      "consolidated_loo_sign_stable": true,
+      "significant_draw_fraction": 1.0,
+      "significant_positive_draw_fraction": 1.0
+    }
+  ],
+  "gate6_per_patient_rows": 6
+}

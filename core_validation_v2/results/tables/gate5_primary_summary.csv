@@ -1,0 +1,2 @@
+K,sample_size_per_PID_tissue,seed_plan,full_data_effect,magnitude_threshold,direction_retention_fraction,median_downsampled_magnitude,magnitude_pass,direction_pass,outcome_class,consolidated_mean_delta_z,consolidated_wilcoxon_p,consolidated_bootstrap_ci_low,consolidated_bootstrap_ci_high,consolidated_loo_sign_stable,significant_draw_fraction,significant_positive_draw_fraction
+1000,30,SeedSequence(42).spawn(1000),0.400629,0.2003145,1.0,0.414199,True,True,PASS,0.412717,0.0,0.347078,0.478289,True,1.0,1.0

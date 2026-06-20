@@ -1,0 +1,235 @@
+{
+  "gene_sets": {
+    "ISC_9": [
+      "LGR5",
+      "OLFM4",
+      "ASCL2",
+      "SOX9",
+      "CD44",
+      "SMOC2",
+      "RGMB",
+      "EPHB2",
+      "MSI1"
+    ],
+    "FAO_12": [
+      "CPT1A",
+      "HMGCS2",
+      "FABP1",
+      "ACOX1",
+      "ACADL",
+      "ACADM",
+      "PDK4",
+      "PPARD",
+      "PPARA",
+      "ANGPTL4",
+      "HADH",
+      "ACAA2"
+    ],
+    "core_beta_ox_5": [
+      "CPT1A",
+      "ACADL",
+      "ACADM",
+      "HADH",
+      "ACAA2"
+    ],
+    "union_21_count": 21
+  },
+  "pelka_norm": {
+    "n_cells": 168295,
+    "n_genes": 31873
+  },
+  "population": {
+    "n_cE01": 61953,
+    "cE01_stemta_exact_match": true,
+    "n_tumor_cE01": 50167,
+    "n_normal_cE01": 11786
+  },
+  "eligibility": {
+    "thresh_20": 35,
+    "thresh_30": 34,
+    "eligible_30_pids": [
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142",
+      "C143",
+      "C151",
+      "C152",
+      "C155",
+      "C157",
+      "C162",
+      "C170"
+    ],
+    "thresh_50": 33
+  },
+  "confound": {
+    "shared_batch_count": 0,
+    "total_eligible": 34,
+    "cramers_v": 1.0
+  },
+  "data_scale": {
+    "pelka_X_classification": "LOG_NORMALIZED",
+    "counts_is_integer": true
+  },
+  "gene_presence": {
+    "pelka_all_21_present": true
+  },
+  "alignment": {
+    "barcode_match": true
+  },
+  "gate2": {
+    "isc_scanpy_maxdiff": 0.0,
+    "fao_scanpy_maxdiff": 0.0,
+    "r_tumor_pooled_scanpy": -0.018208935463318407,
+    "r_normal_pooled_scanpy": -0.3808090359253497
+  },
+  "comparison": {
+    "gate2_r_normal_scanpy": {
+      "ours": -0.3808090359253497,
+      "theirs": -0.380809,
+      "abs_diff": 3.592534969509842e-08,
+      "tol": 0.001,
+      "status": "MATCH"
+    },
+    "gate2_r_tumor_scanpy": {
+      "ours": -0.018208935463318407,
+      "theirs": -0.018209,
+      "abs_diff": 6.453668159253634e-08,
+      "tol": 0.001,
+      "status": "MATCH"
+    },
+    "gate2b_r_normal_cleanbg": {
+      "ours": -0.3821787511533457,
+      "theirs": -0.382179,
+      "abs_diff": 2.4884665428270836e-07,
+      "tol": 0.001,
+      "status": "MATCH"
+    },
+    "gate2b_r_tumor_cleanbg": {
+      "ours": -0.0327309691785419,
+      "theirs": -0.032731,
+      "abs_diff": 3.0821458101015775e-08,
+      "tol": 0.001,
+      "status": "MATCH"
+    },
+    "gate4_mean_delta_z": {
+      "ours": 0.40062918886162374,
+      "theirs": 0.400629,
+      "abs_diff": 1.8886162372888649e-07,
+      "tol": 0.0001,
+      "status": "MATCH"
+    },
+    "gate4_median_delta_z": {
+      "ours": 0.422796833320229,
+      "theirs": 0.422797,
+      "abs_diff": 1.6667977098538955e-07,
+      "tol": 0.0001,
+      "status": "MATCH"
+    },
+    "gate4_wilcoxon_p": {
+      "ours": 2.3283064365386963e-10,
+      "theirs": 2.3283064365386963e-10,
+      "abs_diff": 0.0,
+      "tol": 1e-08,
+      "status": "MATCH"
+    },
+    "gate4_ci_lo": {
+      "ours": 0.3371415699522461,
+      "theirs": 0.3371415699522461,
+      "abs_diff": 0.0,
+      "tol": 0.02,
+      "status": "MATCH"
+    },
+    "gate4_ci_hi": {
+      "ours": 0.4641400214213512,
+      "theirs": 0.4641400214213511,
+      "abs_diff": 1.1102230246251565e-16,
+      "tol": 0.02,
+      "status": "MATCH"
+    },
+    "gate3_baseline_mean_dz": {
+      "ours": 0.38668810926648267,
+      "theirs": 0.386688,
+      "abs_diff": 1.0926648269515837e-07,
+      "tol": 0.001,
+      "status": "MATCH"
+    }
+  },
+  "gate4": {
+    "mean_delta_z": 0.40062918886162374,
+    "median_delta_z": 0.422796833320229,
+    "prop_positive": 0.9705882352941176,
+    "wilcoxon_p": 2.3283064365386963e-10,
+    "bootstrap_ci_lo": 0.3371415699522461,
+    "bootstrap_ci_hi": 0.4641400214213512,
+    "ci_excludes_zero": true,
+    "loo_all_positive": true,
+    "loo_max_pct_change": 3.607022623517194,
+    "outcome": "PASS"
+  },
+  "gate5": {
+    "k_verified": 50,
+    "direction_fraction_sample": 1.0,
+    "median_magnitude_sample": 0.4082812477066071
+  },
+  "gate3": {
+    "baseline_mean_dz": 0.386688,
+    "fabp1_retention": 0.4303,
+    "hmgcs2_retention": 1.0069,
+    "core_betaox_retention": 0.3499,
+    "core_beta_oxidation_holds": "False",
+    "fao_reframe_conjunction": "False",
+    "program_level_fao_robust": "False",
+    "our_baseline_mean_dz": 0.38668810926648267
+  },
+  "gate6": {
+    "n_lgr5_positive": 9804,
+    "eligible_patients": [
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C139",
+      "C143"
+    ],
+    "n_eligible": 6,
+    "outcome": "POWER-LIMITED/INCONCLUSIVE"
+  },
+  "lee_smc": {
+    "data_scale": "ALREADY_LOG_NORMALIZED_SUBSETTED",
+    "n_genes": 2861,
+    "missing_genes": []
+  },
+  "lee_kul3": {
+    "data_scale": "ALREADY_LOG_NORMALIZED_SUBSETTED",
+    "n_genes": 2861,
+    "missing_genes": []
+  },
+  "lee": {
+    "n_informative_patients": 12,
+    "all_informative_negative": true
+  }
+}

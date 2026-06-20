@@ -1,0 +1,12 @@
+.claude/
+data/
+models/
+*.h5ad
+*.h5
+*.pkl
+*.pt
+*.npy
+*.safetensors
+.DS_Store
+__pycache__/
+*.pyc

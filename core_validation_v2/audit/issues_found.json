@@ -1,0 +1,352 @@
+[
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 0 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.471371, Theirs=0.365915",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 1 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.380633, Theirs=0.330679",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 2 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.385839, Theirs=0.389971",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 3 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.428307, Theirs=0.390566",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 4 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.368107, Theirs=0.375728",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 5 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.386113, Theirs=0.464855",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 6 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.402585, Theirs=0.469730",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 7 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.380864, Theirs=0.372401",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 8 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.410688, Theirs=0.365727",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 9 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.428162, Theirs=0.445458",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 10 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.359633, Theirs=0.434459",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 11 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.363144, Theirs=0.350768",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 12 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.496451, Theirs=0.431709",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 13 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.468791, Theirs=0.357110",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 14 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.408855, Theirs=0.434574",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 15 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.368894, Theirs=0.340710",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 16 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.387357, Theirs=0.352729",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 17 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.328256, Theirs=0.452686",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 18 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.359130, Theirs=0.385990",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 19 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.441211, Theirs=0.400052",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 20 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.381003, Theirs=0.437934",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 21 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.403424, Theirs=0.347275",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 22 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.530221, Theirs=0.406784",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 23 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.379058, Theirs=0.329042",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 24 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.374359, Theirs=0.442267",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 25 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.410906, Theirs=0.451218",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 26 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.475974, Theirs=0.399431",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 27 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.413855, Theirs=0.402210",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 28 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.350118, Theirs=0.408602",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 29 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.409631, Theirs=0.468611",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 30 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.381274, Theirs=0.505114",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 31 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.410419, Theirs=0.358445",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 32 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.448901, Theirs=0.448148",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 33 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.318261, Theirs=0.432939",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 34 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.479600, Theirs=0.449319",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 35 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.354608, Theirs=0.425560",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 36 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.505585, Theirs=0.517660",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 37 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.388229, Theirs=0.408763",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 38 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.497373, Theirs=0.446905",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 39 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.382753, Theirs=0.393423",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 40 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.407707, Theirs=0.398634",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 41 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.415266, Theirs=0.370343",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 42 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.412395, Theirs=0.367061",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 43 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.424792, Theirs=0.556548",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 44 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.323379, Theirs=0.358575",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 45 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.492039, Theirs=0.440918",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 46 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.429681, Theirs=0.429119",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 47 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.457108, Theirs=0.458965",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 48 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.422433, Theirs=0.418693",
+    "recommendation": ""
+  },
+  {
+    "severity": "MATERIAL",
+    "title": "Gate 5 draw 49 mismatch",
+    "location": "gate5_draw_summary.csv",
+    "detail": "Ours=0.371029, Theirs=0.411436",
+    "recommendation": ""
+  }
+]

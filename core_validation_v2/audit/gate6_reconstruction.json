@@ -1,0 +1,14 @@
+{
+  "lgr5_detected_cE01": 9804,
+  "eligible_pids": [
+    "C122",
+    "C124",
+    "C125",
+    "C126",
+    "C139",
+    "C143"
+  ],
+  "n_eligible": 6,
+  "subset_mean_delta_z": 0.3154981240736512,
+  "same6_full_mean_delta_z": 0.39327260801458896
+}

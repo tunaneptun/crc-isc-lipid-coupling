@@ -1,0 +1,8 @@
+column,max_abs_diff
+n_normal,0.0
+n_tumor,0.0
+r_normal,2.220446049250313e-16
+r_tumor,1.3877787807814457e-16
+z_normal,4.440892098500626e-16
+z_tumor,1.1102230246251565e-16
+delta_z,4.440892098500626e-16

@@ -1,0 +1,56 @@
+{
+  "script": "06_gate6_lgr5_sensitivity.py",
+  "gate": "Gate 6",
+  "versions": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "scanpy": "1.11.5"
+  },
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "n_ce01": 61953,
+  "n_lgr5_detected_ce01": 9804,
+  "n_eligible_pids": 6,
+  "eligible_pids": [
+    "C122",
+    "C124",
+    "C125",
+    "C126",
+    "C139",
+    "C143"
+  ],
+  "overlap_with_primary_34": 6,
+  "n_retained_paired": 6,
+  "outcome": "POWER-LIMITED / INCONCLUSIVE",
+  "guard_results": {
+    "guard1_controls": "PASS",
+    "guard2_alignment": "PASS",
+    "guard3_gate3_reproduction": "PASS",
+    "guard3_mean_dz_diff": 2.799882943826937e-07,
+    "guard3_max_pp_diff": 8.326672684688674e-17
+  },
+  "subset_stats": {
+    "mean_delta_z": 0.315498124073651,
+    "median_delta_z": 0.3413982027507164,
+    "wilcoxon_p": null,
+    "bootstrap_ci_lo": null,
+    "bootstrap_ci_hi": null,
+    "ci_excludes_0": null,
+    "loo_all_positive": null
+  },
+  "comparator_mean_dz_full": 0.393272608014589,
+  "comparator_retention_ratio": 0.8022377293613776,
+  "gate3_context_mean_dz": 0.386812,
+  "inputs": {
+    "epithelial_normalized": "data/processed/pelka_epithelial.h5ad",
+    "epithelial_counts": "data/processed/pelka_epithelial_counts.h5ad",
+    "clean_control_genes": "core_validation_v2/provenance/clean_control_gene_sets.json",
+    "config": "core_validation_v2/config.yaml"
+  },
+  "input_hashes": {
+    "clean_control_gene_sets_json": "7c9a31066fa83b366f79edbdd910ff4bf9871028df454f9f4f11a1a9d7a34329",
+    "config_yaml": "d17b724b6065cfca88c6777b6d4cde3a7f1ab547005f867090fe29ff56f61644"
+  },
+  "status": "COMPLETE"
+}
